@@ -22,9 +22,6 @@ To include a link to the uploaded photo ID in admin emails, the following templa
 {your-theme}/tribe/tickets/emails/template-parts/body/order/attendees-table/admin-attendee-info.php
 {your-theme}/tribe/tickets/emails/template-parts/body/order/admin-attendees-table.php
 ```
-
----
-
 # File Upload
 
 ## Modal Template
