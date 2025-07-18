@@ -1,0 +1,15 @@
+{
+    "name": "philiparudy/otslr-additional-fields",
+    "autoload": {
+        "psr-4": {
+            "Philiparudy\\OtslrAdditionalFields\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "milliephanillie",
+            "email": "me@philiparudy.com"
+        }
+    ],
+    "require": {}
+}
