@@ -28,6 +28,16 @@ class OtslrUpload {
         }
 
         $file = $_FILES['file'];
+
+        $allowed_extensions = ['jpg', 'jpeg', 'png', 'webp', 'pdf'];
+        $file_ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
+
+        if (!in_array($file_ext, $allowed_extensions)) {
+            return new WP_REST_Response([
+                'error' => 'Invalid file type. Only JPG, JPEG, PNG, WEBP, and PDF files are allowed.'
+            ], 400);
+        }
+
         $params = $request->get_params();
         $input_name = $params['name'] ?? null;
         $post_id = $params['post_id'] ?? null;
@@ -65,7 +75,6 @@ class OtslrUpload {
         remove_filter('upload_dir', '__return_false');
 
         if (isset($upload['url']) && $attendee_id) {
-
             $transient_id = 'otslr_attendee_file_' . $ticket_id . '_' . $attendee_id;
             $data = [
                 'url' => $upload['url'],

@@ -37,7 +37,9 @@ class OtslrLogger {
         }
     }
 
-    public static function custom_write($error_log = null) {
+    public static function custom_write($error_log = null, $file = null) {
+        $file = $file ? ABSPATH . 'wp-content/' .  $file : self::LOG_FILE;
+        
         if($error_log && self::LOG_FILE) {
             error_log(print_r($error_log, true), 3, ABSPATH . 'wp-content/' . self::LOG_FILE);
         }

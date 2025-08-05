@@ -42,7 +42,7 @@ $classes = [
 						<?php echo esc_html( $type_name ); ?>
 					</span>
 					<span class="tribe-tickets__admin-attendee-info-field-title-label">
-						<?php echo esc_html( $label ); ?>
+						Photo ID
 					</span>
 				</span>
 			</h2>
@@ -91,7 +91,7 @@ $classes = [
 						class="ticket_field"
 						name="tribe-tickets-input[<?php echo esc_attr( $field_id ); ?>][label]"
 						value="Photo ID"
-						disabled
+						readonly
 					>
 				</div>
 			</div>

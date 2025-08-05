@@ -28,11 +28,11 @@ if ( empty( $attendee ) ) {
 	<?php $this->template( 'template-parts/body/order/attendees-table/ticket-id' ); ?>
 </tr>
 
-<?php if ( ! empty( $attendee['attendee_meta']['file-upload'] ) ) : ?>
+<?php if ( ! empty( $attendee['attendee_meta']['photo-id'] ) ) : ?>
 <tr class="tec-tickets__email-table-content-order-attendee-info-photo-id-row">
 	<td colspan="3" class="tec-tickets__email-table-content-align-left" align="left" style="padding: 6px 0;">
 		<strong>Photo ID:</strong>
-		<a href="<?php echo esc_url( $attendee['attendee_meta']['file-upload'] ); ?>" target="_blank" rel="noopener noreferrer">
+		<a href="<?php echo esc_url( $attendee['attendee_meta']['photo-id'] ); ?>" target="_blank" rel="noopener noreferrer">
 			View Uploaded File
 		</a>
 	</td>

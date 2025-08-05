@@ -1,15 +1,21 @@
 {
-    "name": "philiparudy/otslr-additional-fields",
-    "autoload": {
-        "psr-4": {
-            "Philiparudy\\OtslrAdditionalFields\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "milliephanillie",
-            "email": "me@philiparudy.com"
-        }
-    ],
-    "require": {}
+  "name": "philiparudy/otslr-additional-fields",
+  "description": "Minimal composer.json for AWS S3 upload support",
+  "type": "project",
+  "require": {
+    "aws/aws-sdk-php": "^3.337"
+  },
+  "autoload": {
+    "psr-4": {
+      "OtslrAdditionalFields\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "milliephanillie",
+      "email": "me@philiparudy.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }

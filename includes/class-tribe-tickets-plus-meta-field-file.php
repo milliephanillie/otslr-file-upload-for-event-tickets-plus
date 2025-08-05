@@ -57,7 +57,7 @@ class Tribe__Tickets_Plus__Meta__Field__File extends Tribe__Tickets_Plus__Meta__
 
 
     public static function get_name() {
-        return  $this->label;
+        return 'Photo ID';
     }
 
     public function save_value( $attendee_id, $field, $value ) {
